@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Цветочный "Lutik"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico">
+<meta property="og:title" content="Lutik — цветочные наборы">
+<meta property="og:description" content="Свежие букеты с доставкой">
+<meta property="og:image" content="https://flowerlutik.netlify.app/img/preview.jpg">
+<meta property="og:url" content="https://flowerlutik.netlify.app/">
+<meta property="og:type" content="website">
+</head>
+
+<body>
+<header class="topbar">
+
+    <div class="top-left">
+        <span class="logo">Lutik</span>
+    </div>
+
+    <div class="top-center">
+        <span>Ежедневно с 9:00 до 21:00</span>
+    </div>
+
+    <div class="top-right">
+    <a href="https://t.me/LutovAleksander" target="_blank">📲 Telegram</a>
+    <span class="phone">📞 +7 917 191 71 747</span>
+</div>
+
+</header>
+
+
+
+<!-- БЛОК С ТОВАРАМИ -->
+<section class="products">
+
+    <div class="card" onclick="openModal(
+    'Нежный букет', 
+    'Розы (15 шт), пионы (5 шт)',
+    'img/flower1.jpg',
+    '2 500 ₽',
+    'Голландии'
+)">
+    <img src="img/flower1.jpg">
+    <h3>Нежный букет</h3>
+    <p>Розы и пионы</p>
+    <strong>2 500 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Романтика', 
+    'Красные розы (21 шт)',
+    'img/flower2.jpg',
+    '2 800 ₽',
+    'Россия'
+)">
+    <img src="img/flower2.jpg">
+    <h3>Романтика</h3>
+    <p>Красные розы</p>
+    <strong>3 200 ₽</strong>
+    <p></p>
+</div>
+
+    <div class="card" onclick="openModal(
+    'Весенний микс',
+    'Тюльпаны, розы, ромашки',
+    'img/flower3.jpg',
+    '2 800 ₽',
+    'Нидерланды'
+)">
+    <img src="img/flower3.jpg">
+    <h3>Весенний микс</h3>
+    <p>Яркие цветы</p>
+    <strong>2 800 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Летний букет',
+    'Лилии, розы, хризантемы',
+    'img/flower4.jpg',
+    '3 100 ₽',
+    'Россия'
+)">
+    <img src="img/flower4.jpg">
+    <h3>Летний букет</h3>
+    <p>Свежие цветы</p>
+    <strong>3 100 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Нежность',
+    'Пионы, розы',
+    'img/flower5.jpg',
+    '3 500 ₽',
+    'Франция'
+)">
+    <img src="img/flower5.jpg">
+    <h3>Нежность</h3>
+    <p>Пастельные оттенки</p>
+    <strong>3 500 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Яркий день',
+    'Герберы, тюльпаны',
+    'img/flower6.jpg',
+    '2 200 ₽',
+    'Голландия'
+)">
+    <img src="img/flower6.jpg">
+    <h3>Яркий день</h3>
+    <p>Солнечный букет</p>
+    <strong>2 200 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Роскошь',
+    'Розы премиум',
+    'img/flower7.jpg',
+    '5 000 ₽',
+    'Эквадор'
+)">
+    <img src="img/flower7.jpg">
+    <h3>Роскошь</h3>
+    <p>Премиум букет</p>
+    <strong>5 000 ₽</strong>
+</div>
+
+<div class="card" onclick="openModal(
+    'Мини букет',
+    'Микс цветов',
+    'img/flower8.jpg',
+    '1 800 ₽',
+    'Россия'
+)">
+    <img src="img/flower8.jpg">
+    <h3>Мини букет</h3>
+    <p>Компактный вариант</p>
+    <strong>1 800 ₽</strong>
+    <p></p>
+</div>
+
+</section>
+
+<section class="features">
+
+    <h2>Почему выбирают нас</h2>
+
+    <div class="features-container">
+
+        <div class="feature">
+            <div class="icon">🌸</div>
+            <h3>Свежие цветы</h3>
+            <p>Поставки каждый день</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🚚</div>
+            <h3>Быстрая доставка</h3>
+            <p>Доставим за 2 часа</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">💐</div>
+            <h3>Авторские букеты</h3>
+            <p>Уникальные композиции</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews">
+
+    <h2>Отзывы наших клиентов</h2>
+
+    <div class="reviews-container">
+
+        <div class="review">
+            <p>"Очень красивые букеты! Девушка была в восторге 😍"</p>
+            <strong>— Антон</strong>
+        </div>
+
+        <div class="review">
+            <p>"Доставили быстро, цветы свежие. Буду заказывать ещё!"</p>
+            <strong>— Мария</strong>
+        </div>
+
+        <div class="review">
+            <p>"Лучший сервис, всё на высшем уровне 👍"</p>
+            <strong>— Дмитрий</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- О НАС -->
+<section class="about">
+
+    <div class="about-box">
+        <h2>О нас</h2>
+        <p>
+            Мы создаём стильные цветочные композиции для любых событий — 
+            от романтических свиданий до больших праздников.  
+        </p>
+
+        <p>
+            Наши цветы всегда свежие, а каждый букет собирается вручную флористами.
+        </p>
+
+        <button onclick="openTG()">Наш телеграмм канал</button>
+    </div>
+
+</section>
+
+
+<!-- ФОРМА -->
+<section class="form">
+
+    <div class="form-box">
+        <h2>Оставить заявку</h2>
+        <p>Мы свяжемся с вами в течение 10 минут</p>
+
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Телефон">
+        <button onclick="sendForm()">Отправить</button>
+    </div>
+
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">×</span>
+
+        <img id="modal-img">
+
+        <h2 id="modal-title"></h2>
+
+        <div class="price" id="modal-price"></div>
+
+        <p id="modal-desc"></p>
+
+        <p class="country" id="modal-country"></p>
+
+        <button class="order-btn" onclick="openTG()">Заказать</button>
+
+    </div>
+</div>
+
+<!-- форма заказа -->
+<div class="order" id="order">
+    <div class="order-box">
+        <h3>Введите номер</h3>
+        <input type="tel" id="phone" placeholder="+7...">
+        <button onclick="sendOrder()">Отправить</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<div class="modal" id="modal"></div>
+</body>
+</html>
+
