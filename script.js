@@ -60,7 +60,7 @@ function sendOrder() {
         return;
     }
 
-    let token = "8727744618:AAFVmmGWcoF7Ywqr9tiijPDGiKcy6UNTGa8"; // ОБЯЗАТЕЛЬНО поменяй!
+    let token = "8566600692:AAGLKYV1uxwc2b9B3XZEHR53hpZSYAOa5Bk"; // ОБЯЗАТЕЛЬНО поменяй!
     let chat_id = "6091253525";
 
     let message = "📩 Новая заявка с сайта!\n\n📞 Телефон: " + phone;
