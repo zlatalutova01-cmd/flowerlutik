@@ -69,7 +69,7 @@ function sendOrder() {
     let token = "8566600692:AAGLKYV1uxwc2b9B3XZEHR53hpZSYAOa5Bk";
     let chat_id = "6091253525";
 
-    let message = "📩 Новая заявка!\nТелефон: +" + phone;
+    let message = "📩 Новая заявка! \nТелефон: +" + phone;
 
     fetch("https://api.allorigins.win/raw?url=" + 
         encodeURIComponent(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`)
@@ -79,6 +79,6 @@ function sendOrder() {
         input.value = "";
     })
     .catch(() => {
-        alert("Ошибка");
+        alert("Ошибка, попробуйте снова!");
     });
 }
