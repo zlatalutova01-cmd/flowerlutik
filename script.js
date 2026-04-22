@@ -51,37 +51,26 @@ function openTG() {
     window.open("https://t.me/LutovAleksander", "_blank");
 }
 
-
 function sendOrder() {
     let phone = document.getElementById("phone").value;
 
-    if (phone === "") {
+    if (!phone) {
         alert("Введите номер!");
         return;
     }
 
-    let token = "8566600692:AAGLKYV1uxwc2b9B3XZEHR53hpZSYAOa5Bk"; // ОБЯЗАТЕЛЬНО поменяй!
+    let token = "8566600692:AAGLKYV1uxwc2b9B3XZEHR53hpZSYAOa5Bk";
     let chat_id = "6091253525";
 
-    let message = "📩 Новая заявка с сайта!\n\n📞 Телефон: " + phone;
+    let message = "📩 Новая заявка!\nТелефон: " + phone;
 
-    fetch("https://api.telegram.org/bot" + token + "/sendMessage", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            chat_id: chat_id,
-            text: message
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
+    fetch("https://api.allorigins.win/raw?url=" + 
+        encodeURIComponent(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`)
+    )
+    .then(() => {
         alert("Заявка отправлена!");
     })
-    .catch(err => {
-        console.log(err);
-        alert("Ошибка отправки");
+    .catch(() => {
+        alert("Ошибка");
     });
 }
