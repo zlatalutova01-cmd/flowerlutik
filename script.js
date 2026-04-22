@@ -52,7 +52,14 @@ function openTG() {
 }
 
 function sendOrder() {
-    let phone = document.getElementById("phone").value;
+    let input = document.getElementById("phone");
+
+    if (!input) {
+        alert("Ошибка: поле не найдено");
+        return;
+    }
+
+    let phone = input.value;
 
     if (!phone) {
         alert("Введите номер!");
@@ -62,13 +69,14 @@ function sendOrder() {
     let token = "8566600692:AAGLKYV1uxwc2b9B3XZEHR53hpZSYAOa5Bk";
     let chat_id = "6091253525";
 
-    let message = "📩 Новая заявка!\nТелефон: " + phone;
+    let message = "📩 Новая заявка!\nТелефон: +" + phone;
 
     fetch("https://api.allorigins.win/raw?url=" + 
         encodeURIComponent(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`)
     )
     .then(() => {
         alert("Заявка отправлена!");
+        input.value = "";
     })
     .catch(() => {
         alert("Ошибка");
